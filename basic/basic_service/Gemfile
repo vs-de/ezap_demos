@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+#source 'http://gems.github.com'
+
+#gem 'ezap_service', git: 'https://github.com/vs-de/ezap_service.git'
+gem 'ezap_core', git: 'https://github.com/vs-de/ezap_core.git'
+gem 'ezap_service', path: '../../../ezap_service'
+
