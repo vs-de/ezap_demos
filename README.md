@@ -80,9 +80,9 @@ You want to try it out and play? Great!
         irb(main):002:0> ds.date
         => "2014-01-01T02:02:11+1:00"
 
-if u get a date -> all is fine.
+    if u get a date -> all is fine.
 
-If not -> u can write me a line. ;)
+    If not -> u can write me a line. ;)
 
 7. stop the service
 
