@@ -87,8 +87,11 @@ You want to try it out and play? Great!
 7. stop the service
 
     in irb:
+    
         ds.service_request :stop
+        
     outside:
+    
         bundle exec ezap stop DemoService
 
 As noted somewhere before, this stuff is wip, stay tuned...
