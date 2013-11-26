@@ -73,6 +73,7 @@ You want to try it out and play? Great!
         $ echo DemoService.new.start | ruby -r ./demo.rb
 
 6. this blocks now and waits for requests, let's do some(in ezap_demos/basic again):
+
         $ irb -r ./demo.rb
         irb(main):001:0> ds = DemoService.new
         ...
