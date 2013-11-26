@@ -14,36 +14,38 @@ task (remotely).
 
 an adapter-class looks simple like this:
 
-    class DemoService
-      include Ezap::ServiceAdapter
-    
-      def heavy_func #omg hard work todo, let's put it into a remote-service!
-        service_request :heavy_func
-      end
-    end
+```ruby
+class DemoService
+  include Ezap::ServiceAdapter
+
+  def heavy_func #omg hard work todo, let's put it into a remote-service!
+    service_request :heavy_func
+  end
+end
+```
 
 ####Service
 
 a basic service responding to the heavy function looks like this:
+```ruby
+class DemoService
+  include Ezap::Service::Base
 
-    class DemoService
-      include Ezap::Service::Base
-    
-      class Dispatcher < CoreDispatcher
-        
-        # 'service' holds the actual service object
-        def heavy_func
-          {reply: service.date}
-        end
-    
-      end
-    
-      def heavy_func
-        DateTime.now.to_s
-      end
-    
+  class Dispatcher < CoreDispatcher
+
+    # 'service' holds the actual service object
+    def heavy_func
+      {reply: service.date}
     end
 
+  end
+
+  def heavy_func
+    #exhausing work...
+  end
+
+end
+```
 ####so what?
 
 You want to try it out and play? Great!
