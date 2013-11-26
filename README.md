@@ -35,7 +35,7 @@ class DemoService
 
     # 'service' holds the actual service object
     def heavy_func
-      {reply: service.date}
+      {reply: service.heavy_func}
     end
 
   end
