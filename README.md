@@ -51,33 +51,33 @@ end
 You want to try it out and play? Great!
 
 1. Fetch this repos first:
-
-    $ git clone https://github.com/vs-de/ezap_demos
+    
+        $ git clone https://github.com/vs-de/ezap_demos
     
 2. go inside
 
-    $ cd ezap_demos/basic/
+        $ cd ezap_demos/basic/
     
 3. bundle
 
-    $ bundle
+        $ bundle
     
 4. According to the doc on the [core gem](https://github.com/vs-de/ezap_core) we start the global master
 
-    $ bundle exec ezap start
+        $ bundle exec ezap start
     
 5. run the service(maybe inside screen/tmux, 2nd terminal, whatever fits your taste)
 
-    $ cd basic_service/
-    $ bundle
-    $ echo DemoService.new.start | ruby -r ./demo.rb
+        $ cd basic_service/
+        $ bundle
+        $ echo DemoService.new.start | ruby -r ./demo.rb
 
 6. this blocks now and waits for requests, let's do some(in ezap_demos/basic again):
-    $ irb -r ./demo.rb
-    irb(main):001:0> ds = DemoService.new
-    ...
-    irb(main):002:0> ds.date
-    => "2014-01-01T02:02:11+1:00"
+        $ irb -r ./demo.rb
+        irb(main):001:0> ds = DemoService.new
+        ...
+        irb(main):002:0> ds.date
+        => "2014-01-01T02:02:11+1:00"
 
 if u get a date -> all is fine.
 If not -> u can write me a line. ;)
