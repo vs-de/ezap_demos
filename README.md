@@ -84,6 +84,13 @@ if u get a date -> all is fine.
 
 If not -> u can write me a line. ;)
 
+7. stop the service
+
+    in irb:
+        ds.service_request :stop
+    outside:
+        bundle exec ezap stop DemoService
+
 As noted somewhere before, this stuff is wip, stay tuned...
 
 ## Contributing
