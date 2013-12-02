@@ -26,19 +26,10 @@ end
 
 ####Service
 
-a basic service responding to the heavy function looks like this:
+a very basic service responding to the heavy function looks like this:
 ```ruby
 class DemoService
-  include Ezap::Service::Base
-
-  class Dispatcher < CoreDispatcher
-
-    # 'service' holds the actual service object
-    def heavy_func
-      {reply: service.heavy_func}
-    end
-
-  end
+  include Ezap::Service::Immediate
 
   def heavy_func
     #exhausing work...
