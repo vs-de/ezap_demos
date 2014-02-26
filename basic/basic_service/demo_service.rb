@@ -8,4 +8,8 @@ class DemoService
     DateTime.now.to_s
   end
 
+  def add n
+    n+1+rand(10)
+  end
+
 end

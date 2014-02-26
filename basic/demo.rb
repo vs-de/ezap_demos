@@ -8,4 +8,8 @@ class DemoService
     service_request :date
   end
 
+  def add n
+    service_request :add, n
+  end
+
 end
